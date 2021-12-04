@@ -23,3 +23,22 @@ not a month
 '''
 
 #start writing your code below
+day31 = ['January', 'january', 'March', 'march', 'May', 'may', 'July', 'july', 'August', 'august', 'October', 'october', 'December', 'december']
+day30 = ['April', 'april', 'June', 'june', 'September', 'september', 'November', 'november']
+ViableMonth = 0
+
+Month = str(input('Enter a month: '))
+
+while ViableMonth == 0:
+    if Month in day30:
+        print('That month has 30 days')
+        ViableMonth = 1
+    elif Month in day31:
+        print('That month has 31 days')
+        ViableMonth = 1
+    elif Month == 'February' or Month == 'february':
+        print('That month has either 28 or 29 days.')
+        ViableMonth = 1
+    else:
+        print('That month does not exist. Please try again.')
+        Month = str(input('Enter a month: '))
