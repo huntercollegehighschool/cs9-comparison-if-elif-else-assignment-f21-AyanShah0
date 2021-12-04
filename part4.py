@@ -24,3 +24,14 @@ opposite
 '''
 
 #start writing your code below
+num1 = int(input('Enter a number: '))
+num2 = int(input('Enter another nubmer: '))
+
+if num1 == 0 or num2 == 0:
+    print('At least one number is zero.')
+elif num1 < 0 and num2 < 0:
+    print('Both numbers are negative.')
+elif num1 > 0 and num2 > 0:
+    print('Both numbers are positive.')
+else:
+    print('Both numbers are opposites of each other.')
